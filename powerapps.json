@@ -1,0 +1,16 @@
+{
+  "name": "project-management-gantt-chart",
+  "displayName": "プロジェクト管理 - ガントチャート",
+  "description": "Microsoft 365 / Office製品導入プロジェクトのタスク管理アプリ",
+  "version": "1.0.0",
+  "framework": "react",
+  "buildOutput": "dist",
+  "entryPoint": "index.html",
+  "assets": [
+    "dist/**/*"
+  ],
+  "capabilities": {
+    "authentication": true,
+    "userContext": true
+  }
+}

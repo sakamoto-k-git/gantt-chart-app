@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.0",
+  "id": "{{APP_ID}}",
+  "packageName": "com.microsoft.powerapps.ganttchart",
+  "developer": {
+    "name": "Power Apps Developer",
+    "websiteUrl": "https://powerapps.microsoft.com",
+    "privacyUrl": "https://privacy.microsoft.com",
+    "termsOfUseUrl": "https://www.microsoft.com/servicesagreement"
+  },
+  "name": {
+    "short": "ガントチャート",
+    "full": "プロジェクト管理 - ガントチャート"
+  },
+  "description": {
+    "short": "プロジェクトタスク管理",
+    "full": "Microsoft 365 / Office製品導入プロジェクトのタスクをガントチャートで管理するアプリケーション"
+  },
+  "icons": {
+    "color": "icon-color.png",
+    "outline": "icon-outline.png"
+  },
+  "accentColor": "#0078D4",
+  "configurableTabs": [],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": []
+}

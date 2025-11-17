@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>プロジェクト管理 - ガントチャート</title>
+  </head>
+  <body>
+    <script>
+      // 可能な限り早く親フレームに通知
+      (function() {
+        try {
+          if (window.parent && window.parent !== window) {
+            window.parent.postMessage({ type: 'appLoading', source: 'code-app', timestamp: Date.now() }, '*');
+          }
+        } catch (e) {
+          console.error('Failed to notify parent:', e);
+        }
+      })();
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
